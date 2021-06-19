@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#field {
+  width: 100%;
+  height: 100vh;
+}
+#menu_btn {
+  background-color: rgb(90, 89, 89);
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 2;
+}
+#menu_btn div {
+  margin: 10px 0 0 10px;
+  border-radius: 10px;
+  background: url("../img/go.png");
+  background-size: contain;
+  background-color: burlywood;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+#menu_btn-open {
+  background-color: rgb(90, 89, 89);
+  width: 100px;
+  height: 60px;
+  border: 1px solid black;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+#menu_color {
+  width: 40px;
+  height: 40px;
+
+  background: url("../img/color.png");
+  background-size: contain;
+  background-color: burlywood;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#menu_brush-size {
+  width: 40px;
+  height: 40px;
+  background: url("../img/size.png");
+  background-size: contain;
+  background-color: burlywood;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#canvas {
+  background: rgb(201, 201, 201);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#color {
+  background-color: rgb(90, 89, 89);
+  width: 100px;
+  height: 270px;
+  border: 1px solid black;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 3;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+#red,
+#blue,
+#yellow,
+#green,
+#violet {
+  width: 78px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  z-index: 3;
+}
+#red {
+  background-color: red;
+}
+#blue {
+  background-color: blue;
+}
+#yellow {
+  background-color: yellow;
+}
+#green {
+  background-color: green;
+}
+#violet {
+  background-color: violet;
+}
+
+#brush-size {
+  background-color: rgb(90, 89, 89);
+  width: 100px;
+  height: 330px;
+  border: 1px solid black;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 3;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#r10,
+#r15,
+#r25,
+#r35,
+#r40,
+#r50 {
+  border: 1px solid black;
+  background-color: rgb(36, 35, 35);
+  border-radius: 50%;
+  margin: 10px;
+  z-index: 3;
+}
+#r10 {
+  width: 10px;
+  height: 10px;
+}
+#r15 {
+  width: 15px;
+  height: 15px;
+}
+
+#r25 {
+  width: 25px;
+  height: 25px;
+}
+
+#r35 {
+  width: 35px;
+  height: 35px;
+}
+#r40 {
+  width: 40px;
+  height: 40px;
+}
+#r50 {
+  width: 50px;
+  height: 50px;
+}

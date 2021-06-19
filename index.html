@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="field">
+      <canvas id="canvas" width="300" height="300"></canvas>
+
+      <div id="menu_btn" v-if="proxod1">
+        <div @click="isMenu1"></div>
+      </div>
+
+      <div id="menu_btn-open" v-if="proxod2">
+        <div id="menu_color" @click="isMenu2l"></div>
+        <div id="menu_brush-size" @click="isMenu3r"></div>
+      </div>
+
+      <div id="color" v-if="proxod3l" @click="vuborColor">
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+        <div id="violet"></div>
+      </div>
+      <div id="brush-size" v-if="proxod3r" @click="vuborSize">
+        <div id="r10"></div>
+        <div id="r15"></div>
+        <div id="r25"></div>
+        <div id="r35"></div>
+        <div id="r40"></div>
+        <div id="r50"></div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
